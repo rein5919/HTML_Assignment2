@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Very Own Gym</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div id="navbar">
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">&#127968; Home</a>
+    <a href="about.html">&#10068; About</a>
+    <a href="locations.html">&#128204; Location</a>
+    <a href="contactus.html">&#9993; Contact us</a>
+  </div>
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰</button>	
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <img src="place.jpg" style="width:100%;">
+  <div class="content">
+    <h1 style="color:honeydew;">Location</h1>
+  </div>
+</div>
+<br>
+<hr>
+<br>
+
+<h2 style="border:2px solid rgb(101, 78, 131); margin:0px 320px 0px 320px">
+<img src="gympic7.jpg" style="width:100%">
+  <p style="background-color:rgb(101, 78, 131); padding:10px; margin:0px; font-size:14px;">
+  We can be located at:
+  <br>
+  <br>
+  5 Tampines Ave 3
+  <br>
+  Singapore, South East 529705
+  </p>
+</h2>
+
+<h2 style="color:ivory; font-size:20px; text-align:center;"> <u>General Guide on how to get there</u> </h2>
+<p style="text-align:left; font-size:12px;"> 
+  <b>By Bus:</b> 
+  <br>
+  - The nearest bus stops are 76289 and 75079
+  <br>
+  - Buses to take are 22, 46 or 129 and 46 or 293 respectively
+  <br>
+  <b>By Train:</b> 
+  <br>
+  - The closest MRT station is Tampines West (Downtown Line) 
+  <br>
+  - It is a 5 minute walk from the MRT
+  <br>
+  <b>By Car:</b> 
+  <br>
+  - There are parking lots at the surrounding HDB areas and inside the Community Centre as well.
+</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3502.5956234324753!2d103.9358330982317!3d1.3468643401616431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x31da3d6b6f43fc5b%3A0x99a50c481c9f3380!2s5%20Tampines%20Ave%203%2C%20Singapore%20529705!3m2!1d1.3488129!2d103.93574389999999!5e0!3m2!1sen!2ssg!4v1612967946375!5m2!1sen!2ssg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<br>
+<hr>
+<br>
+
+<div class="boxes">
+<img src="place2.png" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+  <p> To see how to get to the gym,
+  <br>
+  See our <a href="https://www.youtube.com/watch?v=EWijgJA9aks" target="_blank" style="color:plum;">WALKTHROUGH</a> here!
+  </p>
+  </div>
+</div>
+<br>
+<br>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
